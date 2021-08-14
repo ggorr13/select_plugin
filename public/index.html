@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+<div id="action">
+<h1>Actions</h1>
+    <h5 onclick="openSelect()">Open</h5>
+    <h5 onclick="closedSelect()">Closed</h5>
+    <h5 onclick="clearSelect()">Clear</h5>
+    <div class="d-flex">
+        <h5>Add</h5>
+        <input type="text" id="addForm" class="form-control" placeholder="Add option"/>
+    </div>
+    <div class="d-flex mt-2">
+        <h5>Delete</h5>
+        <input type="text" id="deleteForm" class="form-control" placeholder="Delete option"/>
+    </div>
+</div>
+<div id="root">
+    <div id="box">
+        <label class="boxLabel">Select Technology</label>
+        <div class="arrow">^</div>
+        <span class="text"></span>
+    </div>
+    <div class="lists"></div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
